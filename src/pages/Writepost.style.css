@@ -1,0 +1,494 @@
+.editing-content::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+.editing-content::-webkit-scrollbar {
+	width: 3px;
+	border: none;
+}
+
+.editing-content::-webkit-scrollbar-thumb {
+	background: #7a7a7a;
+	width: 2px;
+	border-radius: 5px;
+}
+
+.content-textfield::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+.content-textfield::-webkit-scrollbar {
+	width: 5px;
+}
+
+.content-textfield::-webkit-scrollbar-thumb {
+	background: #e45826;
+	width: 2px;
+	border-radius: 5px;
+}
+
+.write-post {
+	width: 100%;
+	height: 100%;
+	font-family: "Nunito";
+	background-color: #f0f4f7;
+}
+
+.write-post .all-container {
+	padding: 1em 8em 10px 8em;
+}
+
+.left-side-block {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 65%;
+	position: relative;
+	z-index: 4;
+}
+
+.editing-content {
+	background-color: #fff;
+	border: 1px solid #d2d6db;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	overflow-y: auto;
+	height: calc(100vh - 1em - 115px);
+	width: 100%;
+}
+
+.post-header-field {
+	height: 100%;
+}
+
+.post-inner:first-child {
+	padding: 1.5rem 4rem 1em 4rem;
+}
+
+.post-inner:last-child {
+	padding: 1em 4rem 1em 4rem;
+}
+
+.upload-cover-image {
+	display: flex;
+	align-items: center;
+}
+
+.post-cover-image {
+	white-space: nowrap;
+	position: relative;
+	padding: 0.75em 1em;
+	border: 2px solid #d2d6db;
+	border-radius: 5px;
+	outline: 0;
+	background-color: inherit;
+	cursor: pointer;
+	margin-right: 5px;
+	transition: all 0.4s ease;
+}
+
+.post-cover-image label {
+	font-weight: 700;
+	font-family: "Nunito";
+	font-size: 16px;
+}
+
+.error-logs {
+	font-size: 14px;
+	font-family: "Nunito";
+	color: red;
+	font-weight: 600;
+}
+
+.upload-cover-btn {
+	opacity: 0;
+	cursor: pointer;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.post-cover-image:hover {
+	background-color: #f5faff;
+	border: 2px solid #aaa4a4;
+}
+
+.article-form-title {
+	margin: 1.5em 0 0.75em 0;
+}
+
+.caption-textfield {
+	border: none;
+	padding: 0;
+	margin: 0;
+	outline: none;
+	box-shadow: none;
+	transition: none;
+	letter-spacing: normal;
+	word-spacing: normal;
+	text-transform: none;
+	text-indent: 0px;
+	text-shadow: none;
+	overflow: hidden;
+	column-count: initial !important;
+	font-size: 50px;
+	font-weight: 800;
+	font-family: "Nunito";
+	color: #000000;
+	height: 68px;
+}
+
+.article-form-title .caption-textfield::placeholder {
+	font-size: 50px;
+	color: #64707d;
+}
+
+.tags-textfield {
+	border: none;
+	padding: 0;
+	margin: 0;
+	outline: none;
+	box-shadow: none;
+	resize: none;
+	transition: none;
+	width: 100%;
+	letter-spacing: normal;
+	word-spacing: normal;
+	text-transform: none;
+	text-indent: 0px;
+	text-shadow: none;
+	overflow-wrap: break-word;
+	overflow: hidden;
+	column-count: initial !important;
+	height: 30px;
+	font-size: 18px;
+	font-weight: 500;
+	font-family: "Nunito";
+	color: #000000;
+}
+
+.category-group {
+	position: relative;
+	display: flex;
+	align-items: center;
+	min-height: 70px;
+	font-family: "Nunito";
+	z-index: 99;
+}
+
+.select-area {
+	flex: 1;
+	position: relative;
+}
+
+.select-label {
+	flex-basis: 37%;
+	font-size: 17px;
+	font-weight: 600;
+}
+
+.select-button {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	background-color: #fff;
+	border-radius: 2px;
+	width: 50%;
+	cursor: pointer;
+	padding: 5px 8px;
+	border: 0.5px solid #d2d6db;
+}
+
+.select-button .chevrons {
+	display: flex;
+	flex-direction: column;
+}
+
+.options {
+	position: absolute;
+	top: 100%;
+	width: 50%;
+	margin-top: 1px;
+	background-color: #fff;
+	border-radius: 2px;
+	border: 1px solid rgb(184, 184, 184);
+	box-shadow: 3px 4px 6px #d2d6db;
+	height: 150px;
+	overflow: auto;
+}
+
+.drop {
+	display: none;
+}
+
+.option {
+	cursor: pointer;
+	padding: 15px 8px;
+	transition: 0.3s ease all;
+	height: 50px;
+}
+
+.option:hover {
+	background-color: rgb(223, 223, 223);
+}
+
+.icon-chevron {
+	font-size: 14px;
+	color: #b6c1c4;
+}
+
+.post-body-field {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.post-body-wrap-content {
+	height: 100%;
+}
+
+.content-image {
+	background-color: #f7fdff9f;
+	display: flex;
+	margin: 0 0 3em 0;
+	align-items: center;
+}
+
+.post-content-image {
+	white-space: nowrap;
+	position: relative;
+	padding: 0.5em calc(0.75em + 5px) 0.5em 0.75em;
+	border: none;
+	border-radius: 5px;
+	outline: 0;
+	background-color: inherit;
+	cursor: pointer;
+	transition: all 0.4s ease;
+	font-family: "Nunito";
+	font-weight: 600;
+	font-family: "Nunito";
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+	background-color: #f0f1f1;
+	color: #000;
+}
+
+.post-content-image:hover {
+	background-color: #e0e0e0;
+}
+
+.post-content-image > svg {
+	width: 25px;
+	height: 25px;
+	margin-right: 5px;
+}
+
+.upload-image-btn {
+	opacity: 0;
+	cursor: pointer;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.markdown-image {
+	width: 350px;
+	height: 100%;
+	position: relative;
+	margin-left: 10px;
+}
+
+.markdown-image .popup {
+	opacity: 0;
+	width: 100%;
+	height: 30px;
+	font-size: 14px;
+	font-weight: 600;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	margin-top: 4px;
+}
+
+.animation {
+	animation: popupBlur 1s;
+	animation-iteration-count: 1;
+}
+
+@keyframes popupBlur {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.markdown-image-syntax {
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	border: 2px solid #d2d6db;
+	font-size: 16px;
+	outline: none;
+	padding: 0.5em;
+	transition: all ease 0.4s;
+}
+
+.markdown-image-syntax:focus {
+	box-shadow: 1.25px 1.25px 1px blue;
+	border-color: blue;
+}
+
+.content-textfield {
+	width: 100%;
+	border: none;
+	padding: 0;
+	margin: 0;
+	outline: none;
+	box-shadow: none;
+	transition: none;
+	letter-spacing: normal;
+	word-spacing: normal;
+	text-transform: none;
+	text-indent: 0px;
+	text-shadow: none;
+	overflow: hidden;
+	column-count: initial !important;
+	font-size: 19px;
+	font-weight: 600;
+	font-family: "Nunito";
+	color: #000000;
+	height: 240px;
+}
+
+.bottom-end {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
+.helpme {
+	color: rgb(255, 78, 78);
+	font-family: "Nunito";
+}
+
+.publish-and-save {
+	display: flex;
+	align-items: center;
+	height: 45px;
+	margin-top: 10px;
+}
+
+.publish-and-save a {
+	cursor: pointer;
+}
+
+.write-post .btn-outline-custom {
+	background-color: #4157df;
+	color: #fff;
+	width: 80px;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 0.7rem 0.8rem;
+	border: 1px solid transparent;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+		border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.write-post .btn-outline-custom:first-child {
+	margin: 0 10px 0 0;
+}
+
+.write-post .btn-outline-custom > svg {
+	margin-left: 5px;
+	width: 12px;
+	height: 12px;
+}
+
+.write-post .btn-outline-custom.active,
+.write-post .btn-outline-custom:hover,
+.write-post .btn-outline-custom:active,
+.write-post .show > .write-post .btn-outline-custom.dropdown-toggle {
+	background-color: #3749bd;
+}
+
+.write-post .btn-outline-custom.active,
+.write-post .btn-outline-custom:hover,
+.write-post .btn-outline-custom:active,
+.write-post .show > .write-post .btn-outline-custom.dropdown-toggle {
+	color: #fff;
+}
+
+.tab {
+	height: 100px;
+	width: 40px;
+	background-color: rgb(48, 48, 48);
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	cursor: pointer;
+	position: absolute;
+	left: calc(100% - 20px);
+	transition: all ease 0.5s;
+	z-index: -1;
+}
+
+.tab.emoji {
+	top: 55px;
+}
+
+.tab.guide {
+	top: 165px;
+	background-color: red;
+}
+
+.tab p {
+	transform: rotate(90deg);
+	font-weight: 700;
+	font-size: 18px;
+	margin: 0;
+}
+
+.tab i {
+	transform: rotate(90deg);
+	font-size: 16px;
+}
+
+.emoji-mart-emoji {
+	outline: none;
+}
+
+.emoji-mart {
+	display: none;
+}
+
+.emoji-icon:hover {
+	animation: emoji 1s;
+}
+
+.emoji-animation {
+	left: 100%;
+}
+
+.emoji-mart-hide-show {
+	display: inline-block !important;
+}

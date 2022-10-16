@@ -1,0 +1,67 @@
+.top-navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 50px;
+}
+
+.controll-block {
+	display: flex;
+	align-items: center;
+}
+
+.controll-block .back-to-home {
+	display: flex;
+	align-items: center;
+}
+
+.controll-block > .back-to-home > svg {
+	width: 30px;
+	height: 30px;
+	color: rgb(148, 148, 148);
+}
+
+.controll-block p {
+	font-size: 18px;
+	font-weight: 700;
+	padding-left: 1em;
+}
+
+.combo-function {
+	font-size: 17px;
+	font-weight: 600;
+	width: 150px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.combo-function a {
+	color: #000;
+	position: relative;
+	padding: 0.5em 0.4em;
+	transition: background-color 0.3s ease;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.combo-function :not(.isFocused) {
+	font-weight: 400;
+}
+
+.combo-function a.isFocused::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0.5em;
+	width: 20px;
+	height: 4px;
+	background-color: #4157df;
+	border-radius: 5px;
+}
+
+.combo-function a:hover {
+	background-color: #dcdff0;
+	border-radius: 5px;
+	color: #4157df;
+	font-weight: 700 !important;
+}

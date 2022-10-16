@@ -1,0 +1,257 @@
+.newsfeed {
+	height: 100%;
+	width: 100%;
+	background-color: #f0f4f7;
+	padding-top: calc(100px + 1em);
+	padding-bottom: 70px;
+	display: flex;
+}
+
+.newsfeed .all-container {
+	padding-top: 0;
+	padding-bottom: 0;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.left-side-menu {
+	flex-basis: 20%;
+	margin: 0 2em 0 0;
+}
+
+.menu {
+	padding: 0;
+}
+
+.menu li {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	margin: 0.5em 0;
+	cursor: pointer;
+	padding: 0.5em 0;
+}
+
+.menu li:hover {
+	background-color: rgb(218, 218, 218);
+	border-radius: 5px;
+}
+
+.menu li svg {
+	margin-right: 5px;
+}
+
+.menu li a {
+	color: #000;
+	font-size: 18px;
+	font-family: "Nunito";
+	font-weight: 600;
+}
+
+.tagcloud {
+	max-height: 180px;
+	margin-top: 2em;
+}
+
+.tagcloud p {
+	font-family: "Nunito";
+	font-weight: 800;
+}
+
+.tagcloud .scroll-content {
+	display: flex;
+	flex-direction: column;
+	overflow-y: auto;
+}
+
+.tagcloud a {
+	font-size: 14px;
+	margin: 0.5em 0;
+	background-color: #e6e6e6;
+	padding: 0.5em;
+	width: fit-content;
+	border-radius: 2px;
+	color: #000;
+	transition: all 0.5s;
+}
+
+.tagcloud a:hover {
+	background-color: #0db3e3;
+}
+.posts {
+	flex-basis: 80%;
+}
+
+.post {
+	margin: 0 0 45px;
+	font-family: "Nunito";
+}
+
+.post + .post {
+	border-top: 1px solid rgb(231, 231, 231);
+	padding-top: 45px;
+}
+
+.post-header {
+	margin: 0 0 30px;
+}
+
+.post-title {
+	font-size: 22px !important;
+	margin: 0 0 10px;
+}
+
+.post-title a {
+	color: #333;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+.post-meta {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	opacity: 0.7;
+	color: #000;
+	font-weight: 600;
+	display: flex;
+}
+
+.post-meta > li {
+	display: flex;
+	align-items: center;
+	margin-right: 30px;
+	font-size: 15px;
+}
+
+.post-meta > li:last-child {
+	margin-right: 0;
+}
+
+.post-meta > li > svg {
+	width: 15px;
+	height: 15px;
+}
+
+.post-meta a {
+	color: #000;
+	transition: all 0.5s;
+	font-size: 14px;
+	font-weight: 600;
+	margin: 0 5px;
+}
+
+.post-meta .saved-button {
+	cursor: pointer;
+}
+
+.post-preview {
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	margin: 0 0 25px;
+}
+
+.post-preview:hover {
+	opacity: 0.7;
+}
+
+.rounded {
+	border-radius: 0.25rem !important;
+}
+.img-fluid {
+	width: 800px;
+	height: auto;
+	object-fit: cover;
+}
+
+.post-content p,
+.post-content ul,
+.post-content ol {
+	margin: 0 0 20px;
+	line-height: 26px;
+	font-size: 17px;
+	text-align: justify;
+}
+
+.btn {
+	max-width: 130px;
+	display: flex;
+	align-items: center;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border-radius: 2px;
+	font-weight: 600;
+	padding: 0.6rem 0.8rem;
+	border: 1px solid transparent;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+		border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn > svg {
+	margin-left: 5px;
+	width: 12px;
+	height: 12px;
+}
+
+.btn-outline-custom {
+	background-color: transparent;
+	background-image: none;
+	border-color: #0db3e3;
+	color: #0db3e3;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+		border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.link-post,
+.post-author-box .socials li a:hover,
+.post-tags a:hover,
+.post-tags a:focus,
+.btn-outline-custom.active,
+.btn-outline-custom:hover,
+.btn-outline-custom:active,
+.show > .btn-outline-custom.dropdown-toggle {
+	background-color: #0db3e3;
+}
+
+.btn-outline-custom.active,
+.btn-outline-custom:hover,
+.btn-outline-custom:active,
+.show > .btn-outline-custom.dropdown-toggle {
+	color: #fff;
+}
+
+.post-title a:hover,
+.search-button:hover,
+.post-meta a[href]:hover,
+.post-meta .saved-button:hover {
+	color: #0db3e3;
+}
+
+.back-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: calc(0px + 25px);
+	width: 50px;
+	height: 50px;
+	padding: 4px;
+	z-index: 99;
+	background-color: rgb(0, 0, 0);
+	display: none;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	cursor: pointer;
+}
+
+.back-to-top:hover {
+	background-color: rgb(62, 62, 62);
+}
+
+.back-to-top .back-to-top-icon {
+	width: 25px;
+	height: 25px;
+	color: #fff;
+}
